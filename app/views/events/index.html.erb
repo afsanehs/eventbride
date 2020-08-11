@@ -3,44 +3,6 @@
 
 
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Accueil </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Créer un évenement <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">S'inscrire / Se connecter</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">S'inscrire </a>
-              <a class="dropdown-item" href="#">Se connecter </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mon profile</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Mon profile </a>
-              <a class="dropdown-item" href="#">Se déconnecter </a>
-            </div>
-          </li>
-        </ul>
-        <ul>
-        <% if current_user %>
-          <%= link_to "Log out", destroy_user_session_path %>
-        <% else %>
-          <%= link_to "Sign in ", new_user_session_path %>
-          <%= link_to "Sign up ", new_user_registration_path %>
-        <% end %>
-        </ul>
-       </div>
-    </nav>
-
     <main role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
