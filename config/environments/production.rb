@@ -7,7 +7,7 @@ Rails.application.configure do
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'smol-eventbride.herokuapp.com',
+    :domain         => 'sandbox29d6e826aeea4a919bee3f9d6140d91e.mailgun.org',
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
