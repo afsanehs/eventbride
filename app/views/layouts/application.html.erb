@@ -32,7 +32,6 @@
               <%= link_to "S'inscrire", new_user_registration_path, class: "dropdown-item" %>
               <%= link_to "Se connecter", new_user_session_path, class: "dropdown-item" %>
             <% else %>
-              <a class="dropdown-item" href="#">Mon profile </a>
               <%= link_to "Mon profile", new_user_session_path, class: "dropdown-item" %>
               <%= link_to "Se déconnecter", destroy_user_session_path, class: "dropdown-item" %>
             <% end %>
