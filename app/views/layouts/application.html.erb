@@ -28,12 +28,12 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">S'inscrire / Se connecter</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <% if current_user %>
+            <% if !current_user %>
               <%= link_to "S'inscrire", new_user_registration_path, class: "dropdown-item" %>
               <%= link_to "Se connecter", new_user_session_path, class: "dropdown-item" %>
             <% else %>
               <%= link_to "Mon profile", new_user_session_path, class: "dropdown-item" %>
-              <%= link_to "Se déconnecter", destroy_user_session_path, class: "dropdown-item" %>
+              <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             <% end %>
           </div>
         </li>
